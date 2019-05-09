@@ -1,0 +1,15 @@
+<aura:component controller="LinkedlnoAuthController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+	<aura:attribute name="candidate" type="LinkedIn_Information__c[]" default="{'sobjectType': 'LinkedIn_Information__c',
+      'Name': '',   
+      'Access_Token__c': '',
+      'Expires_In_Seconds__c': ''                                                
+      }"/>
+    <aura:handler name="fetchAcc" value="{!this}" action="{!c.fetchAcc}"/>
+    console.log('=====getAccounts=====');
+            <!--<div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb; height:100%;opacity:0.65;width:100%;">
+               <div class="waitingHolder" style="top: 100px; width: 91px;">
+                  <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                  <span class="waitingDescription">Loading...</span>
+               </div>
+            </div>-->
+</aura:component>
